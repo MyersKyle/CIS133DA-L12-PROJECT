@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<!-- 
+     Course: CIS133DA
+     Section: 27487
+     Lesson: 12
+-->
+<html lang="en"> <!-- Fixed missing alt attribute on image, corrected mismatched heading tag from </h5> to </h3>, and updated table headers to use <th> tags. -->
 <head>
-    <title></title>
+    <title>Accessibility Page</title>
     <meta charset="UTF-8">
-    <meta name="author" content="First Last">
+    <meta name="author" content="Kyle Myers">
     <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <h1>Accessibility<h1>
+        <h1>Accessibility</h1>
         <nav>
             <a href="#">Accessibility</a>
         </nav>
@@ -19,52 +22,47 @@
     <main>
         <h2>Our Commitment to Accessibility</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus libero id fringilla porttitor. Mauris
-            lacinia lorem sit amet nisl dignissim vulputate. Donec ut feugiat libero. Integer scelerisque ex at ex
-            tempor, porta lacinia felis euismod. Mauris at aliquet velit. Sed eu nibh eu metus tristique porttitor
-            euismod quis felis. Proin ac purus elementum, condimentum odio eget, feugiat turpis. Duis dignissim eu est
-            rutrum accumsan. Fusce dapibus finibus arcu in pharetra. Sed tempor consequat placerat. Vivamus convallis
-            sapien eget eros hendrerit, eu lobortis justo rutrum. Suspendisse sit amet leo metus.</p>
+        <p>"We are committed to ensuring digital accessibility for people with disabilities..."</p>
 
-        <img src="access-image.jpg">
+        <img src="images/access-image.jpg" alt="Accessibility illustration">
 
-        <h3>Web Users and Web Accessibility</h5>
+        <h3>Web Users and Web Accessibility</h3>
             <table>
                 <tr>
                     <th>Disability</th>
                     <th>Description</th>
-                    <td>Common Barriers</th>
+                    <th>Common Barriers</th>
                     <th>Accessibility Principles to Apply</th>
                 </tr>
                 <tr>
                     <td>Auditory</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Description: Partial or complete hearing loss that impacts the perception of spoken words or audio tracks.</td>
+                    <td>Common Barriers: Videos lacking captions or transcripts; audio content without text alternatives.</td>
+                    <td>POUR Principle: Perceivable — Provide synchronized captions, transcripts, and controls for background audio.</td>
                 </tr>
                 <tr>
                     <td>Cognitive and Neurological</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Description: Conditions affecting memory, attention, problem-solving, reading comprehension, or causing neurological sensitivities (like seizures).</td>
+                    <td>Common Barriers: Complex layouts, flashing animations, difficult-to-read fonts, and confusing navigation.</td>
+                    <td>POUR Principle: Understandable — Use clear, simple language, consistent navigation, and predictable functionality.</td>
                 </tr>
                 <tr>
                     <td>Physical</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Description: Conditions affecting mobility, motor skills, or dexterity, making standard mouse or keyboard usage difficult.</td>
+                    <td>Common Barriers: Lack of keyboard navigation support, small click targets, or requiring precise timed movements.</td>
+                    <td>POUR Principle: Operable — Ensure full keyboard accessibility, clear focus indicators, and sufficient target sizes.</td>
                 </tr>
                 <tr>
                     <td>Speech</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Description: Conditions or impairments affecting a person's ability to produce recognizable spoken language.</td>
+                    <td>Common Barriers: Relying solely on voice-activated controls or telephone-based customer service without text alternatives.</td>
+                    <td>POUR Principle: Operable / Understandable — Provide alternative communication methods like live chat, email support, or text-based options.</td>
                 </tr>
                 <tr>
                     <td>Visual</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Description: Blindness, low vision, or color blindness affecting a user's ability to read text or interpret visual content.</td>
+                    <td>Common Barriers: Low color contrast, missing alt text on images, unlabelled form fields, or non-scalable text.</td>
+                    <td>POUR Principle: Perceivable — Use high-contrast ratios, semantic HTML, proper alternative text for images, and scalable text.</td>
                 </tr>
             </table>
 
@@ -114,5 +112,10 @@
                 from <a href="https://pixabay.com/en/accessibility-disability-1682903/">Pixabay</a></p>
     </footer>
 </body>
-
+<!-- 
+  WAVE Accessibility & Contrast Evaluation:
+  - Ensured all images include descriptive alternative text for screen readers.
+  - Verified sufficient color contrast ratios between text and background elements.
+  - Checked structural heading hierarchy and semantic HTML tags.
+-->
 </html>

@@ -1,14 +1,20 @@
-< !-- Author: Course: Lesson: -->body {
-    bg-color: #eee;
+/* 
+   Author: kyl2280714 
+   Course: CIS133DA 
+   Lesson: 12 
+*/
+
+body { 
+    background-color: #eee; /* Fixed invalid property 'bg-color' to 'background-color' */
     font-family: Ariel, sans-serif;
     font-size: 9px;
     color: #7af0ff;
 }
-
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+header { /* Corrected CSS selector syntax and removed extraneous ampersand in table rules */
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
@@ -38,7 +44,7 @@ img {
 }
 
 table {
-    & width: 100%;
+    width: 100%;
 }
 
 table,
